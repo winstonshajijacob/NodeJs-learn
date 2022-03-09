@@ -2,7 +2,7 @@ const {readFileSync,writeFileSync} = require('fs')
 //alternative
 // const fs = require('fs')
 // fs.read
-
+console.log('start')
 const first = readFileSync('./content/first.txt','utf-8')
 const second = readFileSync('./content/second.txt','utf-8')
 
@@ -21,3 +21,5 @@ writeFileSync(
     `Here is the result : ${first}, ${second}`,
     { flag: 'a'}
     )
+    console.log('done with task')
+    console.log('starting the next one')
